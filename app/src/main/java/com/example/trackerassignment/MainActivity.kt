@@ -2,6 +2,7 @@ package com.example.trackerassignment
 
 
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
@@ -9,6 +10,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
 class MainActivity : AppCompatActivity() {
+
 
     private lateinit var recyclerView: RecyclerView
     private lateinit var adapter: BookAdapter
@@ -34,6 +36,7 @@ class MainActivity : AppCompatActivity() {
         val removeAllButton = findViewById<Button>(R.id.removeAllButton)
 
         addButton.setOnClickListener {
+            Log.d("add bttn", "onCreate: function worked")
             val title = titleEditText.text.toString()
             val genre = genreEditText.text.toString()
             val rating = ratingEditText.text.toString()
