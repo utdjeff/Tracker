@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">TrackerAssignment</string>
+    <string name="store_title">Jefferson\'s Book Store</string>
+    <string name="title_hint">Enter Title</string>
+    <string name="genre_hint">Enter genre</string>
+    <string name="rating_hint">Enter rating</string>
+    <string name="title_">Title</string>
+    <string name="genre_"> genre</string>
+    <string name="rating_"> rating</string>
+    <string name="book_list_header">Completed books</string>
+    <string name="add_button">Add</string>
+    <string name="remove_last_button">Remove Last</string>
+    <string name="remove_all_button">Remove All</string>
+    book_icon_desc
+    <string name="book_icon_desc">picture of book</string>
+
+</resources>

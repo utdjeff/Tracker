@@ -1,0 +1,9 @@
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="colorAddButton">#FF5722</color> <!-- Customize this color as needed -->
+    <color name="colorRemoveButton">#FFC107</color> <!-- Customize this color as needed -->
+    <color name="colorBackground">#FFFFFF</color> <!-- Customize this color as needed -->
+    <color name="colorText">#000000</color> <!-- Customize this color as needed -->
+</resources>

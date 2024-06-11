@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/storeTitleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/store_title"
+            android:textSize="30sp"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center"
+            android:padding="16dp" />
+
+        <EditText
+            android:id="@+id/titleEditText"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:hint="@string/title_hint"
+            android:inputType="text"
+            android:importantForAutofill="no"
+            />
+
+        <EditText
+            android:id="@+id/genreEditText"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:hint="@string/genre_hint"
+            android:inputType="text"
+            android:importantForAutofill="no"/>
+
+        <EditText
+            android:id="@+id/ratingEditText"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:hint="@string/rating_hint"
+            android:inputType="text"
+            android:importantForAutofill="no"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <Button
+                android:id="@+id/addButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/add_button"
+                android:backgroundTint="@color/colorAddButton"
+                android:textColor="@color/colorBackground"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/removeLastButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/remove_last_button"
+                android:backgroundTint="@color/colorRemoveButton"
+                android:textColor="@color/colorBackground"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/removeAllButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/remove_all_button"
+                android:backgroundTint="@color/colorRemoveButton"
+                android:textColor="@color/colorBackground"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/listofbooksView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/book_list_header"
+            android:textSize="30sp"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center"
+            android:padding="16dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>
