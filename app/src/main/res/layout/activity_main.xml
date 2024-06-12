@@ -25,7 +25,7 @@
         <EditText
             android:id="@+id/titleEditText"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="50dp"
             android:hint="@string/title_hint"
             android:inputType="text"
             android:importantForAutofill="no"
@@ -34,18 +34,21 @@
         <EditText
             android:id="@+id/genreEditText"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="50dp"
             android:hint="@string/genre_hint"
             android:inputType="text"
             android:importantForAutofill="no"/>
 
-        <EditText
-            android:id="@+id/ratingEditText"
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:hint="@string/rating_hint"
-            android:inputType="text"
-            android:importantForAutofill="no"/>
+
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="1.0"/>
+
+
 
         <LinearLayout
             android:layout_width="match_parent"

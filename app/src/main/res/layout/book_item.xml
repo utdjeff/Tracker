@@ -6,13 +6,12 @@
     android:weightSum="4"
     android:padding="8dp">
 
-    <ImageView
-        android:id="@+id/bookIcon"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:src="@drawable/ic_android_black_24dp"
-        android:layout_weight="1"
-        android:contentDescription="@string/book_icon_desc" />
+        android:layout_weight="1"/>
+
 
 
     <TextView
